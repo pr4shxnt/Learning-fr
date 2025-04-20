@@ -1,19 +1,28 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Homepage from './Pages/Homepage';
 import UserRoot from './Components/Roots/UserRoot';
+import UserDashboard from './Pages/UserDashboard';
+import Root from './Components/Roots/Root';
+
 
 const routes = [
   {
-    path: '/',
+    path: '/user',
     element: <UserRoot />, // this needs to be passed to the <Route>
     children: [
       {
         path: '',
-        element: <Homepage />,
+        element: <UserDashboard />,
       },
     ],
   },
+  {
+    path: "",
+    element: <Root/>,
+    children: [
+
+    ]
+  }
 ];
 
 const App: React.FC = () => {
