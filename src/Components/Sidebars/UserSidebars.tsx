@@ -141,7 +141,7 @@ const sideBarData: SideBarItem[] = [
         </div>
 
         {/* Footer */}
-        <div className="mt-auto flex items-center p-4">
+        <div className="mt-auto flex justify-between items-center p-4">
           <AnimatePresence>
             {isOpen && (
               <motion.div
