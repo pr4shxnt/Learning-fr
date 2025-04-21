@@ -1,8 +1,11 @@
 import React from 'react'
+import AuthForm from '../Components/Auth/AuthForm'
 
 const Homepage: React.FC = () => {
   return (
-    <div>Homepage</div>
+    <div>
+      <AuthForm/>
+    </div>
   )
 }
 
