@@ -14,7 +14,7 @@ const UserRoot: React.FC = () => {
         <Outlet />
       </div>
       <div className="fixed w-full lg:hidden bottom-0">
-        <ResponsiveNavbar setIsOpen={setIsOpen}/>
+      <ResponsiveNavbar isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
     </div>
   );

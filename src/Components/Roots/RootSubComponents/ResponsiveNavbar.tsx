@@ -83,7 +83,7 @@ const sideBarData: SideBarItem[] = [
             <div className=" flex items-center py-4  justify-between">
                 <div className=" px-3">
                 <Greetings/></div>
-                <div onClick={()=> setInternalIsOpen(false)} className=" md:hidden -top-6 right-0 h-6 w-8  flex items-center justify-center"><ChevronDown/></div>
+                <div onClick={()=> setIsOpen(false)} className=" md:hidden -top-6 right-0 h-6 w-8  flex items-center justify-center"><ChevronDown/></div>
 
             </div>
              <div className=" grid grid-cols-4 md:grid-cols-7 text-[#F4F3EE] items-center justify-center bg-[#483C32] w-full h-full gap-6 py-3 px-4">
@@ -98,7 +98,7 @@ const sideBarData: SideBarItem[] = [
             </NavLink>
         )}
     </div></div> : <div className=""><div className="text-gray-300 md:hidden relative grid grid-cols-4 md:grid-cols-7 bg-black w-full h-full gap-6 py-3 px-4">
-    <div onClick={()=> setInternalIsOpen(!controlledIsOpen)} className="absolute md:hidden -top-6 right-0 h-6 w-8 bg-gray-600 flex items-center justify-center"><ChevronUp/></div>
+    <div onClick={()=> setIsOpen(!controlledIsOpen)} className="absolute md:hidden -top-6 right-0 h-6 w-8 bg-gray-600 flex items-center justify-center"><ChevronUp/></div>
         {sideBarData.slice(0,4).map((item, index)=>
             <NavLink className={`lol p-1 rounded-2xl`} to={item.link}>
             <div key={index} className="flex justify-center">
@@ -111,7 +111,7 @@ const sideBarData: SideBarItem[] = [
         )}
     </div>
     <div className="text-gray-300  md:grid relative hidden grid-cols-4 md:grid-cols-7 bg-black w-full h-full gap-6 py-3 px-4">
-    <div onClick={()=> setInternalIsOpen(!controlledIsOpen)} className="absolute md:hidden -top-6 right-0 h-6 w-8 bg-gray-600 flex items-center justify-center"><ChevronUp/></div>
+    <div onClick={()=> setIsOpen(!controlledIsOpen)} className="absolute md:hidden -top-6 right-0 h-6 w-8 bg-gray-600 flex items-center justify-center"><ChevronUp/></div>
         {sideBarData.map((item, index)=>
             <NavLink className={`lol p-1 rounded-2xl`} to={item.link}>
             <div key={index} className="flex justify-center">
