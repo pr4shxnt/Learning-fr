@@ -75,7 +75,7 @@ export default function AuthForm() {
     const [isLogin, setIsLogin] = useState(true)
 
     return (
-        <div className="mx-auto w-full h-full rounded-xl bg-red-500 p-8 shadow-xl">
+        <div className="mx-auto w-full h-full rounded-xl bg-gray-200 p-8 shadow-xl">
             <div className="mb-8 flex items-center justify-center">
                 <div className="relative flex h-12 w-full max-w-xs overflow-hidden rounded-lg p-1 shadow-sm">
                     <div
